@@ -17,7 +17,7 @@ jobs:
           # extended: true
       - name: Build Hugo
         run: |
-          hugo --theme=book
+          hugo --minify --theme book
 
       - name: Deploy Hugo to gh-pages
         uses: peaceiris/actions-gh-pages@v2
